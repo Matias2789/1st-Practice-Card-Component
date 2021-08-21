@@ -1,0 +1,152 @@
+/* !@import url ('https://fonts.googleapis.com/css2? family = Lexend + Deca: wght @ 100 & display = swap'); </style>family = Inter: wght @ 100 & 
+ *font family: 'Inter', sans-serif;
+ *font family: 'Lexend Deca', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+ /* *Empezando */
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+ /* !First Movil 375px */
+.contenedor {
+    overflow: hidden;
+    margin: 75px 25px;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px; 
+}
+/* ?Editando la imagen */
+.contenido_imagen {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+.imagen {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: cover;
+    object-position: top;
+}
+.violet {
+    background-color: hsl(277, 64%, 61%);
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    filter: contrast(10);
+    filter: brightness(75%);
+}
+/* ?Editando el texto */
+.contenido_cuerpo {
+    height: auto;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* *Editando titulo */
+h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    font-size: 1.9em;
+    padding-top: 30px;
+    padding-bottom: 12px;
+    color: hsl(0, 0%, 100%);
+}
+b {
+    color: hsl(277, 64%, 61%);
+    font-weight: 700;
+}
+/* *Editando parrafo */
+.principal {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1em;
+    padding-top: 15px;
+    align-self: start;
+    font-family: 'Inter', sans-serif;
+    word-spacing: 2px;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.stats {
+    font-size: 0.8em;
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 1.5;
+}
+.stats u {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.9em;
+}
+ /* !Pasando a Desktop */
+@media screen and (min-width: 700px) {
+    .contenedor {
+        flex-direction: row;
+        margin: auto;
+        margin-top: 20vh;
+        width: 80vw;
+        height: 60vh;
+    }
+    /* ?Editando la imagen del desktop */
+    .contenido_imagen {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .imagen {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        object-fit: cover;
+        object-position: left;
+    }
+    /* ?Editando texto desktop */
+    .contenido_cuerpo {
+        display: inline-block;
+        width: 50%;
+        padding: 70px;
+        text-align: left;
+    }
+    /* *Editando titulo */
+    h1 {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 15px;
+        font-size: 2.2em;
+        font-weight: 600;
+    }
+    /* *Editando parrafo */
+    .principal {
+        padding-left: 0;
+        font-weight: 400;
+
+    }
+    .secundario {
+        display: flex;
+        flex-direction: row;
+    }
+    .stats {
+        display: flex;
+        flex-direction: column;
+        padding-right: 60px;
+    }
+    .stats br {
+        display: none;
+    }
+    
+}
